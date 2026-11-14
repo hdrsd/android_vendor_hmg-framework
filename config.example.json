@@ -1,0 +1,8 @@
+{
+  "android_sdk": "dependencies/android-sdk",
+  "build_tools": "dependencies/android-sdk/build-tools/34.0.0",
+  "jdk_bin": "dependencies/jdk-21/bin",
+  "android_jar": "inputs/android-api17.jar",
+  "stock_system": "inputs/system",
+  "dexlib_directory": "dependencies/android-classic/tools/lib"
+}

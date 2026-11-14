@@ -1,0 +1,5 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="dev.stinger.split.tests" android:versionCode="1">
+ <uses-sdk android:minSdkVersion="17" android:targetSdkVersion="17" />
+ <application android:label="Split emulator tests" />
+ <instrumentation android:name="dev.stinger.split.SplitRuntimeTest" android:targetPackage="dev.stinger.split" />
+</manifest>

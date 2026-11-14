@@ -1,0 +1,8 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="dev.stinger.split.fixture" android:versionCode="1" android:versionName="test-only">
+ <uses-sdk android:minSdkVersion="17" android:targetSdkVersion="17" />
+ <application android:label="QEMU 창 크기 검사" android:theme="@android:style/Theme.Holo.NoActionBar">
+  <activity android:name=".FixtureActivity" android:screenOrientation="landscape" android:configChanges="orientation|screenSize" android:exported="true">
+   <intent-filter><action android:name="android.intent.action.MAIN" /><category android:name="android.intent.category.LAUNCHER" /></intent-filter>
+  </activity>
+ </application>
+</manifest>

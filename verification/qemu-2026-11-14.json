@@ -1,0 +1,74 @@
+{
+  "checks": [
+    {
+      "check": "responsive application receives 528x480 frame",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "album art drawn through OEM parcel receiver",
+      "passed": true,
+      "detail": "(239, 166, 140)"
+    },
+    {
+      "check": "panel swipe does not reach main app",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "stored photograph drawn after upward swipe",
+      "passed": true,
+      "detail": "[(74, 105, 132), (239, 215, 181), (33, 56, 82)]"
+    },
+    {
+      "check": "fullscreen button restores 800x480",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "edge handle reopens split without restarting activity",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "track change with no art clears previous cover",
+      "passed": true,
+      "detail": "(33, 44, 57)"
+    },
+    {
+      "check": "scaled viewport maps touch back to original coordinates",
+      "passed": true,
+      "detail": "1:400.0,240.90909"
+    },
+    {
+      "check": "real OEM AllMenus fits original aspect ratio",
+      "passed": true,
+      "detail": "(0, 81, 528, 398)"
+    },
+    {
+      "check": "OEM fullscreen restores original geometry and clears compatibility scaling",
+      "passed": true,
+      "detail": "(0, 0, 800, 480)"
+    },
+    {
+      "check": "unrelated foreground app removes panel",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "panel process death restores fullscreen automatically",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "passed": 12,
+  "android_api": 17,
+  "real_oem_app": "com.lge.ivi.allmenus",
+  "phone_connected": false,
+  "music_transport": "QEMU-only OEM UX Binder fixture; actual vendor Parcelable, no Bluetooth radio",
+  "artwork": "labeled synthetic test image through local cache path",
+  "vehicle_modified": false,
+  "apk_sha256": "b2c1ad0a648e3c14a2b1af34972ef39e7a7c91553dfc99dd0151b901e9e970e7",
+  "policy_dex_sha256": "57aa297f20936084891d56565d37cf24ca8e48020a5d31ffa71ccde21a2e34bf",
+  "evidence_scope": "Recorded local QEMU experiment on 2026-11-14, before source-only publication; not a new test run."
+}

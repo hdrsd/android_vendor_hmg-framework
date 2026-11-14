@@ -1,0 +1,16 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="dev.stinger.split" android:versionCode="1" android:versionName="0.1-qemu">
+  <uses-sdk android:minSdkVersion="17" android:targetSdkVersion="17" />
+  <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+  <uses-permission android:name="android.permission.GET_TASKS" />
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.BLUETOOTH" />
+  <application android:label="Stinger 분할 화면" android:theme="@android:style/Theme.Holo.NoActionBar" android:allowBackup="false">
+    <activity android:name=".ControlActivity" android:screenOrientation="landscape" android:exported="true">
+      <intent-filter><action android:name="android.intent.action.MAIN" /><category android:name="android.intent.category.LAUNCHER" /></intent-filter>
+    </activity>
+    <activity android:name="dev.stinger.standby.SettingsActivity" android:screenOrientation="landscape" android:exported="false" />
+    <activity android:name="dev.stinger.standby.PreviewActivity" android:screenOrientation="landscape" android:exported="false" />
+    <service android:name=".PanelService" android:exported="false" />
+    <provider android:name="dev.stinger.standby.PhotoProvider" android:authorities="dev.stinger.split.photos" android:exported="false" />
+  </application>
+</manifest>

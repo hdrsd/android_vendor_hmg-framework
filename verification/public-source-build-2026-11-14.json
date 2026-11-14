@@ -1,0 +1,73 @@
+{
+  "date": "2026-11-14",
+  "scope": "Fresh Windows build of the public source snapshot, compared with existing QEMU-tested artifacts.",
+  "java_and_manifest_files_identical_to_existing_experiment": 22,
+  "files_compared": [
+    "AndroidManifest.xml",
+    "framework/dev/stinger/split/policy/SplitPolicy.java",
+    "photo-src/dev/stinger/standby/PhotoMath.java",
+    "photo-src/dev/stinger/standby/PhotoProvider.java",
+    "photo-src/dev/stinger/standby/PhotoStore.java",
+    "photo-src/dev/stinger/standby/PreviewActivity.java",
+    "photo-src/dev/stinger/standby/SettingsActivity.java",
+    "photo-src/dev/stinger/standby/core/PhotoLayer.java",
+    "photo-src/dev/stinger/standby/core/StockBridge.java",
+    "src/dev/stinger/split/ControlActivity.java",
+    "src/dev/stinger/split/MediaState.java",
+    "src/dev/stinger/split/OemMediaSource.java",
+    "src/dev/stinger/split/PanelService.java",
+    "src/dev/stinger/split/PanelView.java",
+    "tests/AndroidManifest.xml",
+    "tests/SplitRuntimeTest.java",
+    "tests/fixture/AndroidManifest.xml",
+    "tests/fixture/FixtureActivity.java",
+    "tools/CommandRunner.java",
+    "tools/InjectMedia.java",
+    "tools/PatchPolicy.java",
+    "tools/UxFixture.java"
+  ],
+  "artifacts": {
+    "Stinger-Split-API17.apk": {
+      "classes_dex_sha256": "89b7bf8fb4ea151f9e682ce0f28cfe986a8cdbea85cea8629a3c9e3f1aef1af1",
+      "matches_prepublication_dex": false,
+      "all_retained_classes_identical_after_baksmali_readback": true,
+      "removed_stale_unreferenced_class": "dev/stinger/split/PanelService$3$1.smali",
+      "reason": "Clean javac output excludes a leftover anonymous class from an earlier incremental build."
+    },
+    "android.policy-SPLIT-QEMU-ONLY.jar": {
+      "classes_dex_sha256": "57aa297f20936084891d56565d37cf24ca8e48020a5d31ffa71ccde21a2e34bf",
+      "matches_prepublication_dex": true
+    },
+    "fixture-QEMU-ONLY.apk": {
+      "classes_dex_sha256": "69dedef2899708a8908ca18dc344264f3785ee315b1c08078864b422d426b3b6",
+      "matches_prepublication_dex": true
+    },
+    "runtime-tests-QEMU-ONLY.apk": {
+      "classes_dex_sha256": "a8d79439c039d046329f71c80cbe2bfe58e28a4e05d6f6800fa91ef7a45d5733",
+      "matches_prepublication_dex": true
+    },
+    "injector-QEMU-ONLY.jar": {
+      "classes_dex_sha256": "57a4d492fb50cb6241890a60965c0e5805910617e47c635ea834ef0d91eed01a",
+      "matches_prepublication_dex": true
+    }
+  },
+  "build_verification": {
+    "api": 17,
+    "stock_policy_sha256": "0ffc2d18f2ecad4af35bdecc7fd6ede0f4afe430733496093546383e7d0f3579",
+    "modified_stock_classes": [
+      "com/android/internal/policy/impl/PhoneWindowManager.smali"
+    ],
+    "hook_count": 1,
+    "other_original_policy_code_unchanged": true,
+    "apk_sha256": "7ce2c7906eabecb05c25fa80335910f7a6111c5702366464fafa9c6a66192719",
+    "policy_sha256": "49779a8a9f313bbe09899063269d2f198366586e4209941de076d0d81d04b8c2",
+    "vehicle_tested": false,
+    "bluetooth_radio_tested": false
+  },
+  "signing": "Fresh ignored local developer key; APK signature/hash differs from the earlier experiment.",
+  "qemu_runtime_rerun_for_publication": false,
+  "physical_bluetooth_tested": false,
+  "android_phone_tested": false,
+  "iphone_tested": false,
+  "vehicle_modified": false
+}
